@@ -1,0 +1,13 @@
+this is a txt file test
+git commit -m "..."
+git checkout SHA .
+git commit -m "oops"
+git push
+git pull
+git clone URL
+git status
+
+
+git add -A  // -A adds all files
+git commit -m ".." 
+git push
