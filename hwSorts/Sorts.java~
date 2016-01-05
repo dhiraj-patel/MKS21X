@@ -22,20 +22,6 @@ public class Sorts{
 	}
     }
 
-    public static void selection(int[]data){
-	for(int i = 0; i <data.length;i++){
-	    int minValue = i;
-	    for(int x = i; x < data.length;x++){
-		if(data[minValue]>data[x]){
-		    minValue = x;
-		}
-	    }
-	    int save = data[i];
-	    data[minValue] = save;
-	    data[i] = data[minValue];
-	}
-    }
-
 }
 
     
