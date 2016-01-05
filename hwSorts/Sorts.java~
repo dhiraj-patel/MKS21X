@@ -22,6 +22,25 @@ public class Sorts{
 	}
     }
 
+    public static void selection(int[]data){
+	int minIn;
+       	int minVal;
+	for(int i =0 ; i < data.length; i++){
+
+
+
+	    // set initial values to zero for second loop:
+	    minIn = 0;
+	    minVal = data[minIn];
+	    for(int x 
+    
+		
+		
+      
+		 
+
+    
+
 }
 
     

@@ -22,19 +22,40 @@ public class Sorts{
 	}
     }
 
-    public static void selection(int[]data){
-	for(int i = 0; i <data.length;i++){
-	    int minValue = i;
-	    for(int x = i; x < data.length;x++){
-		if(data[minValue]>data[x]){
-		    minValue = x;
+    public static void selectionSort(int[]data){
+	for(int i = 0; i < data.length; i++){
+	    int minValue = data[i];
+	    int indexToReplace = i;
+	    for(int x = i; x < data.length; x++){
+		if(data[x]<minValue){
+		    minValue = data[x];
+		    indexToReplace = x;
 		}
 	    }
-	    int save = data[i];
-	    data[minValue] = save;
-	    data[i] = data[minValue];
+	    // switch the values: 
+	    int replacingValue = data[indexToReplace];
+	    data[indexToReplace]=data[i];
+	    data[i] = replacingValue; 
 	}
     }
+		
+    public static String printTry(int[]data){
+	String answer = "";
+	for(int i = 0; i < data.length; i++){
+	    answer = answer + data[i] + ", ";
+	}
+	return answer;
+    }
+	
+    public static void main(String[] args){
+	int[]data = {1,2,9,5,0,3};
+	selectionSort(data);
+	System.out.println(printTry(data));
+    }
+    
+		 
+
+    
 
 }
 
